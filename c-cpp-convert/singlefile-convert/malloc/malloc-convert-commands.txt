@@ -1,0 +1,8 @@
+# LLVM Convert
+clang -O3 -emit-llvm malloc.c -c -o malloc.bc
+llvm-dis malloc.bc -o malloc.ll
+
+# Bitcode Functional: Yes
+lli malloc.bc
+
+(Project code from: https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/ )

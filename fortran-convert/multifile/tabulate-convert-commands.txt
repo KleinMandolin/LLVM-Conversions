@@ -1,0 +1,12 @@
+# LLVM Convert
+flang-new-18 -emit-llvm functions.f90 tabulate.f90 -c
+llvm-link-18 functions.bc tabulate.bc -o output.bc
+llvm-dis-18 output.bc -o output.ll
+
+# Bitcode Functional: No
+
+# Normal Compilation Functional: Yes
+flang-new-18 functions.f90 tabulate.f90 -o tabulate.exe
+./tabulate.exe
+
+(Project code from: https://fortran-lang.org/learn/building_programs/linking_pieces/ )

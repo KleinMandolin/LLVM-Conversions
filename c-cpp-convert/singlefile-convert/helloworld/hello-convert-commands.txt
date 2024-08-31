@@ -1,0 +1,6 @@
+# LLVM Convert
+clang -O3 -emit-llvm hello.c -c -o hello.bc
+llvm-dis hello.bc -o hello.ll
+
+# Bitcode Functional: Yes
+lli hello.bc

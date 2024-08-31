@@ -1,0 +1,9 @@
+# LLVM Convert
+flang-new-18 -emit-llvm hello.f90 -c
+llvm-dis-18 hello.bc -o hello.ll
+
+# Bitcode Functional: No
+
+# Normal Compilation Functional: Yes
+flang-new-18 hello.f90 -o hello.exe
+./hello.exe

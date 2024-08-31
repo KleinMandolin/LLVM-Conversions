@@ -1,0 +1,15 @@
+# WLLVM Convert
+(in /wllvm-convert folder)
+(if prereqs not installed) sudo bash ./c2llvm-setup.sh
+bash ./c2llvm.sh
+   Follow instructions in terminal
+   > BASE_FOLDER/c-cpp-convert/wllvm-convert/makefile-project/
+   Output should be main.o, if so then convert to LLVM
+   > y
+   Converted output is in /obj folder of makefile-project
+
+# Bitcode Functional: No
+
+# Normal Compilation Functional: No
+
+(Project code from: https://github.com/secure-software-engineering/phasar/wiki/Whole-Program-Analysis-(using-WLLVM) )

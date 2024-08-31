@@ -1,0 +1,17 @@
+# WLLVM Convert
+(in /wllvm-convert folder)
+(if prereqs not installed) sudo bash ./c2llvm-setup.sh
+bash ./c2llvm.sh
+   Follow instructions in terminal
+   > BASE_FOLDER/c-cpp-convert/wllvm-convert/cmake-project/
+   Once CMakeLists.txt edited
+   > y
+   > y
+   Output should be myprogram, if so then convert to LLVM
+   > y
+   Converted output is in /build folder of cmake-project
+
+# Bitcode Functional: Yes
+lli myprogram.bc
+
+(Project code from: https://github.com/secure-software-engineering/phasar/wiki/Whole-Program-Analysis-(using-WLLVM) )

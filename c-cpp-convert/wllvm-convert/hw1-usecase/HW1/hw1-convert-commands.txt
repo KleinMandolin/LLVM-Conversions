@@ -1,0 +1,16 @@
+# WLLVM Convert
+(in /wllvm-convert folder)
+(if prereqs not installed) sudo bash ./c2llvm-setup.sh
+bash ./c2llvm.sh
+   Follow instructions in terminal
+   > BASE_FOLDER/c-cpp-convert/wllvm-convert/hw1-usecase/HW1/
+   Once CMakeLists.txt edited
+   > y
+   > y
+   Output should be main, if so then convert to LLVM
+   > y
+   Converted output is in /build folder of cmake-project
+
+# Bitcode Functional: Yes
+lli HW1.bc
+(For an example of how to use/test it, look in /HW1 use-example.docx)
